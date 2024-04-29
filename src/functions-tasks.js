@@ -78,8 +78,12 @@ function getArgumentsCount(arr) {
  *   power05(16) => 4
  *
  */
-function getPowerFunction(/* exponent */) {
-  throw new Error('Not implemented');
+function getPowerFunction(exponent) {
+  const result = function result(x) {
+    return x ** exponent;
+  };
+
+  return result;
 }
 
 /**
